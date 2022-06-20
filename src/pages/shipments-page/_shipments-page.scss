@@ -1,0 +1,12 @@
+.shipments-page {
+    height: 100%;
+
+    .create-shipment-form {
+        display: flex;
+        flex-direction: column;
+
+        .MuiOutlinedInput-root {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.data-table {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    height: 100%;
+
+    .action-buttons {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        .button {
+            padding-bottom: 10px;
+            margin-left: 5px;
+        }
+    }
+
+    .MuiDataGrid-row {
+        // color: $medium-gray;
+        font-size: 14px;
+        // max-height: unset !important;
+    }
+
+    .MuiDataGrid-columnSeparator {
+        display: none !important;
+    }
+
+    .MuiDataGrid-cell {
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &:last-child {
+            text-align: right;
+            align-items: flex-end;
+        }
+    }
+}
+
+//     .action-buttons {
+//         // padding-right: 20px;
+//         // margin-top: 20px;
+//         // width: 200px !important;
+
+//         &.toggled {
+//             .actions {
+//                 margin-top: 20px;
+//             }
+
+//             .toggle-button {
+//                 transform: rotate(180deg);
+//             }
+//         }
+
+//         .actions {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             margin-top: 20px;
+//             margin-bottom: 20px;
+//             width: 200px;
+//             // margin-right: 20px;
+//         }
+//         .exports {
+//             margin-bottom: 10px;
+//             margin-top: 10px;
+
+//             .export-button {
+//                 padding: 3px 10px;
+//                 margin-right: 10px;
+//                 border-radius: 4px;
+//                 text-transform: uppercase;
+//                 font-weight: 500;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+
+//     .no-items-wrap {
+//         width: 100%;
+//         flex: 1;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+
+//         .add-item-icon {
+//             width: 200px;
+//         }
+
+//         .no-items-message {
+//             color: $pale-gray;
+//             font-weight: 300;
+//             font-size: 14px;
+//             max-width: 700px;
+//             padding: 50px 20px 20px 20px;
+//             text-align: center;
+//             line-height: 35px;
+//             height: 100px;
+
+//             a {
+//                 // color: $blue;
+//             }
+//         }
+//     }
+
+//     .results-grid {
+//         display: flex;
+//         flex: 1;
+//         flex-direction: column;
+//         align-items: stretch;
+
+//         .MuiDataGrid-columnHeadersInner  {
+//             background-color: #F3F3F4;
+//             border-radius: 0;
+//         }
+
+//         .MuiDataGrid-columnHeader {
+//             // color: $purple-dark;
+//             font-size: 14px;
+//             padding-top: 20px;
+//         }
+
+//         .MuiDataGrid-columnSeparator {
+//             display: none;
+//         }
+
+//         .MuiDataGrid-row {
+//             // color: $medium-gray;
+//             font-size: 14px;
+//             max-height: unset !important;
+//             min-height: 60px;
+//             // padding-top: 10px;
+//             // padding-bottom: 20px;
+//         }
+
+//         .MuiDataGrid-cell {
+//             &:last-child {
+//                 text-align: right;
+//                 align-items: flex-end;
+//             }
+//         }
+//     }
+// }

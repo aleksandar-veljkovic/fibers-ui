@@ -1,0 +1,15 @@
+.button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &.primary {
+        color: white;
+        background-color: $blue-primary;
+    }
+}

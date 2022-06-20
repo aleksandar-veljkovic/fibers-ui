@@ -1,0 +1,32 @@
+@import './variables';
+@import './pages/pages';
+@import './shared-components/shared-components';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-wrap {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: row;
+
+    .page-content-wrap {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 100%;
+        padding: 20px;
+    }
+}
