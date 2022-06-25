@@ -10,13 +10,13 @@ export const Tab = ({ children }) => {
 
 export const Tabs = ({ children }) => {
     const [selectedTabIndex, setSelectedTabIndex] = useState(0);
-    const childrenArray = useRef(Array.isArray(children) ? children : [children]);
+    const childrenArray = Array.isArray(children) ? children : [children];
 
     return (
-        <div className="tabs">
+        <div className="tabs" key={Math.random()}>
             <div className="tabs-header">
                 <div className="tab-items">
-                    { childrenArray.current.map((c, index) => (
+                    { childrenArray.map((c, index) => (
                         <span 
                             key={`tab-item-${index}`}
                             className={`tab-item ${index === selectedTabIndex ? 'selected' : ''}`} 
@@ -26,15 +26,15 @@ export const Tabs = ({ children }) => {
                         </span>
                     ))}
                 </div>
-                { childrenArray.current[selectedTabIndex].props.actions && <div className="actions">
+                { childrenArray[selectedTabIndex].props.actions && <div className="actions">
                     { 
-                        childrenArray.current[selectedTabIndex].props.actions
+                        childrenArray[selectedTabIndex].props.actions
                     }
                     </div>
                 }
             </div>
             <div className="tabs-content">
-                { childrenArray.current[selectedTabIndex].props.children }
+                { childrenArray[selectedTabIndex].props.children }
             </div>
         </div>
     )

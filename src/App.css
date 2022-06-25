@@ -10,6 +10,91 @@
   margin-bottom: 20px;
 }
 
+.edit-shipment-page {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-height: 100%;
+}
+.edit-shipment-page .panel {
+  flex: 1;
+}
+.edit-shipment-page .attributes-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.edit-shipment-page .attributes-grid .attribute-column {
+  display: flex;
+  flex-direction: column;
+}
+.edit-shipment-page .attribute-title {
+  font-size: 14px;
+  color: #a7a7a7;
+  margin: 20px 0 5px 0;
+}
+.edit-shipment-page .attribute-value {
+  font-size: 14px;
+  font-weight: bold;
+}
+.edit-shipment-page .attribute-value .button {
+  margin-left: 10px;
+}
+.edit-shipment-page .attribute-value.hash {
+  font-size: 12px;
+  color: gray;
+}
+.edit-shipment-page .actions-bar {
+  border-top: 1px solid #a7a7a7;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.edit-shipment-page .items-wrap {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.edit-shipment-page .items-wrap .panel {
+  flex: 1;
+  height: 100%;
+}
+
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-page h2 {
+  color: #61ABE2;
+  margin: 0 0 20px 0;
+}
+.login-page .login-form {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.login-page .login-form .MuiFormControl-root {
+  margin-bottom: 10px;
+}
+.login-page .login-form .login-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .app-header {
   position: relative;
   z-index: 2;
@@ -37,6 +122,7 @@
   background-color: white;
   padding: 20px;
   width: 250px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 .sidebar .sidebar-header {
   display: flex;
@@ -85,6 +171,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: stretch;
 }
 .panel .panel-header {
   margin-bottom: 20px;
@@ -94,6 +181,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+.panel .panel-header span {
+  display: flex;
 }
 .panel .panel-header .back-link {
   display: flex;
@@ -108,11 +199,15 @@
   margin-right: 10px;
   color: #61ABE2;
 }
+.panel .panel-header .panel-actions .button {
+  margin-left: 10px;
+}
 .panel .panel-content {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   height: 100%;
+  max-height: 100%;
 }
 
 .tabs {
@@ -197,6 +292,10 @@
   color: white;
   background-color: #61ABE2;
 }
+.button.error {
+  color: white;
+  background-color: rgb(216, 68, 68);
+}
 
 .modal {
   position: fixed;
@@ -245,6 +344,53 @@
   justify-content: flex-end;
 }
 .modal .modal-body .modal-footer .button {
+  margin-left: 10px;
+}
+
+.items-table {
+  height: 100%;
+  overflow: hidden;
+}
+.items-table table {
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+  width: 100%;
+}
+.items-table table th {
+  background-color: #F2F2F2;
+  padding: 20px 10px;
+  font-size: 14px;
+}
+.items-table table th:first-child {
+  text-align: left;
+}
+.items-table table th:last-child {
+  text-align: right;
+}
+.items-table table tr:nth-child(even) {
+  background-color: #ededed;
+}
+.items-table table tr.input-row {
+  background-color: white;
+}
+.items-table table td {
+  text-align: center;
+  padding: 10px;
+}
+.items-table table td:first-child {
+  text-align: left;
+}
+.items-table table td:last-child {
+  text-align: right;
+}
+.items-table .table-actions {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.items-table .table-actions .button {
   margin-left: 10px;
 }
 

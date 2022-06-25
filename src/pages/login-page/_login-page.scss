@@ -1,0 +1,33 @@
+.login-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        color: $blue-primary;
+        margin: 0 0 20px 0;
+    }
+
+    .login-form {
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+
+        .MuiFormControl-root {
+            margin-bottom: 10px;
+        }
+
+        .login-actions {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

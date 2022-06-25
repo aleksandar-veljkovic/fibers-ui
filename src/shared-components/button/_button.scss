@@ -12,4 +12,9 @@
         color: white;
         background-color: $blue-primary;
     }
+
+    &.error {
+        color: white;
+        background-color: rgb(216, 68, 68);
+    }
 }

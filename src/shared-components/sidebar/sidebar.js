@@ -7,13 +7,17 @@ export const Sidebar = () => {
 
     const { pathname: path } = location;
     const pathBase = path.split('/')[1];
-    console.log(pathBase);
 
     return (
-        <aside className="sidebar">
+        <>
+        {
+            pathBase == 'login' ?
+            null
+            :
+            (<aside className="sidebar">
             <div className="sidebar-header">
                 <span className="sidebar-title">Menu</span>
-                <span className="sidebar-toggle"><Close/> Close</span>
+                {/* <span className="sidebar-toggle"><Close/> Close</span> */}
             </div>
             <ul className="sidebar-items">
                 <li className={`sidebar-item ${pathBase === 'shipments' && 'active'}`}>
@@ -47,6 +51,8 @@ export const Sidebar = () => {
                     Users
                 </li>
             </ul>
-        </aside>
+        </aside>)
+        }
+        </>
     )
 }
